@@ -72,7 +72,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <p className="text-gray-400 text-sm">Email</p>
-                  <p className="text-text font-medium">example@example.com</p>
+                  <p className="text-text font-medium">hikachuu2589@gmail.com</p>
                 </div>
               </motion.div>
 
@@ -94,7 +94,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <p className="text-gray-400 text-sm">Phone</p>
-                  <p className="text-text font-medium">+81-90-0000-0000</p>
+                  <p className="text-text font-medium">080-6112-3699</p>
                 </div>
               </motion.div>
 

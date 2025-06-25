@@ -1,69 +1,77 @@
-# React + TypeScript + Vite
+# 大西輝 ポートフォリオサイト
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+大西輝（Hikaru Onishi）の個人ポートフォリオサイトです。会計・ファイナンス分野での経験とスキルを紹介しています。
 
-Currently, two official plugins are available:
+## 概要
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **氏名**: 大西 輝 | Hikaru Onishi
+- **キャッチコピー**: 「会計で企業価値を見抜く次世代ファイナンス・リーダー」
+- **専門分野**: 会計、ファイナンス、財務分析
 
-## Expanding the ESLint configuration
+## 技術スタック
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **フレームワーク**: React 18 + TypeScript
+- **ビルドツール**: Vite
+- **スタイリング**: Tailwind CSS
+- **アニメーション**: Framer Motion
+- **言語対応**: 日本語・英語（i18n）
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 主な機能
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- レスポンシブデザイン
+- 日本語・英語の言語切り替え
+- スムーズなアニメーション
+- お問い合わせフォーム
+- スキル・プロジェクト・経歴の紹介
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## セットアップ
+
+### 必要な環境
+
+- Node.js 18.0.0以上
+- npm または yarn
+
+### インストール
+
+```bash
+# 依存関係のインストール
+npm install
+
+# 開発サーバーの起動
+npm run dev
+
+# ビルド
+npm run build
+
+# プレビュー
+npm run preview
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## プロジェクト構造
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 ```
+src/
+├── components/          # Reactコンポーネント
+│   ├── Header.tsx      # ヘッダー
+│   ├── HeroSection.tsx # ヒーローセクション
+│   ├── AboutSection.tsx # 自己紹介
+│   ├── SkillsSection.tsx # スキル
+│   ├── ProjectsSection.tsx # プロジェクト
+│   ├── ExperienceSection.tsx # 経歴・学歴
+│   ├── ContactSection.tsx # お問い合わせ
+│   └── Footer.tsx      # フッター
+├── contexts/           # React Context
+│   └── LanguageContext.tsx # 言語切り替え
+├── data/              # データファイル
+│   └── translations.ts # 翻訳データ
+└── assets/            # 静的ファイル
+```
+
+## 連絡先
+
+- **メール**: hikachuu2589@gmail.com
+- **電話**: 080-6112-3699
+
+## ライセンス
+
+© 2024 Hikaru Onishi. All rights reserved.

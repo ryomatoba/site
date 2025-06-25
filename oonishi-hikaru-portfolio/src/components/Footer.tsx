@@ -15,7 +15,7 @@ const Footer = () => {
             viewport={{ once: true }}
             className="text-gray-400 text-sm mb-4 md:mb-0"
           >
-            © {currentYear} Hikaru Oonishi. All rights reserved.
+            © {currentYear} Hikaru Onishi. All rights reserved.
           </motion.div>
 
           {/* Links */}
@@ -27,16 +27,16 @@ const Footer = () => {
             className="flex items-center space-x-6"
           >
             <a
-              href="mailto:example@example.com"
+              href="mailto:hikachuu2589@gmail.com"
               className="text-gray-400 hover:text-primary transition-colors duration-200 text-sm"
             >
-              example@example.com
+              hikachuu2589@gmail.com
             </a>
             <a
-              href="tel:+819000000000"
+              href="tel:08061123699"
               className="text-gray-400 hover:text-primary transition-colors duration-200 text-sm"
             >
-              +81-90-0000-0000
+              080-6112-3699
             </a>
           </motion.div>
         </div>

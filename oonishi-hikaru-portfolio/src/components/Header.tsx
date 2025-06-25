@@ -37,7 +37,7 @@ const Header = () => {
             whileHover={{ scale: 1.02 }}
             className="text-lg sm:text-xl font-bold text-primary"
           >
-            Hikaru Oonishi
+            Hikaru Onishi
           </motion.div>
 
           {/* Desktop Navigation */}

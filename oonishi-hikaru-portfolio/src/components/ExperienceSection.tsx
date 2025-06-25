@@ -9,13 +9,13 @@ const ExperienceSection = () => {
   const experience = [
     {
       id: 'tutor',
-      title: 'XYZ塾',
-      role: 'アルバイト講師',
-      period: '2022年4月～現在',
-      description: '数学と会計基礎を指導。自作ワークシートで合格率を15%向上させました。',
+      title: '個別指導学院Hero\'sりんくう校',
+      role: '塾講師（アルバイト）',
+      period: '2022年4月〜現在',
+      description: '英語、数学を中心に指導。全員公立校合格を達成。',
       achievements: [
-        '数学と会計基礎の指導',
-        '自作ワークシートで合格率を15%向上',
+        '英語、数学を中心に指導',
+        '全員公立校合格を達成',
       ],
     },
   ];
@@ -24,16 +24,16 @@ const ExperienceSection = () => {
     {
       id: 'university',
       title: '立命館大学',
-      degree: '経営学部',
-      period: '2022年4月～2026年3月卒業予定',
-      description: '会計・ファイナンス専攻',
+      degree: '経営学部 会計専攻',
+      period: '2023年4月〜2027年3月（予定）',
+      description: '会計・ファイナンスを専攻',
     },
     {
       id: 'highschool',
-      title: 'DEF高等学校',
-      degree: '商業科',
-      period: '2019年4月～2022年3月',
-      description: '商業の基礎知識を習得',
+      title: '大阪府立和泉高等学校',
+      degree: '普通科',
+      period: '2020年4月〜2023年3月',
+      description: '普通科で基礎学力を習得',
     },
   ];
 

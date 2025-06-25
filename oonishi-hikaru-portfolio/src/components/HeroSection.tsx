@@ -93,13 +93,16 @@ const HeroSection = () => {
                 <div className="w-full h-full rounded-full bg-background flex items-center justify-center">
                   {/* Placeholder for profile image */}
                   <div className="w-60 h-60 sm:w-68 sm:h-68 lg:w-76 lg:h-76 rounded-full bg-gray-700 flex items-center justify-center">
-                    <svg
-                      className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 text-gray-500"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-                    </svg>
+                    <div className="text-center">
+                      <svg
+                        className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 text-gray-500 mb-2"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                      </svg>
+                      <p className="text-gray-400 text-xs sm:text-sm font-medium">大西 輝</p>
+                    </div>
                   </div>
                 </div>
               </div>

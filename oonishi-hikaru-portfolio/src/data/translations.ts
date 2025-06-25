@@ -1,27 +1,27 @@
 export const translations = {
   ja: {
     hero: {
-      title: '大西 輝',
+      title: '大西 輝 | Hikaru Onishi',
       subtitle: '「会計で企業価値を見抜く次世代ファイナンス・リーダー」',
       cta: '詳細を見る',
       downloadResume: '履歴書ダウンロード',
     },
     about: {
       title: '自己紹介',
-      description: '立命館大学経営学部で会計・ファイナンスを専攻し、日商簿記検定2級を取得。学生団体の副代表として50名以上のメンバーを率い、半年で黒字化を達成。将来は会計の専門知識を活かして企業価値の向上に貢献したいと考えています。',
+      description: '大学入学前から簿記を学び、1年次に日商簿記2級を取得。インカレサークルを立ち上げ、副代表として会計と運営を統括し、財務健全化と60名規模への拡大を達成。現在はUSCPA取得を目指し、英語力と国際会計基準の知識を磨いている。TRABALHO（献身）・LEALDADE（誠実）・RESPEITO（尊重）を行動基盤に、数字で価値を創出する人材を志向。',
       values: {
-        title: '価値観',
+        title: '核心価値観',
         trabalho: {
           title: 'TRABALHO (献身)',
-          description: '全力で目標達成に挑む姿勢',
+          description: '目標達成へ全力で取り組む姿勢',
         },
         lealdade: {
           title: 'LEALDADE (誠実)',
-          description: 'ステークホルダーとの信頼関係を重視',
+          description: '周囲の人々との信頼関係を重視',
         },
         respeito: {
           title: 'RESPEITO (尊重)',
-          description: '多様な価値観を尊重し協働',
+          description: '多様性を尊重し協働',
         },
       },
     },
@@ -57,14 +57,14 @@ export const translations = {
   },
   en: {
     hero: {
-      title: 'Hikaru Oonishi',
-      subtitle: '"Future Finance Leader with an Eye for Value"',
+      title: 'Hikaru Onishi | 大西 輝',
+      subtitle: '"Next-Generation Finance Leader Who Discerns Corporate Value Through Accounting"',
       cta: 'Learn More',
       downloadResume: 'Download Resume',
     },
     about: {
       title: 'About Me',
-      description: 'I am a student at Ritsumeikan University majoring in Accounting and Finance, holding a Bookkeeping Level 2 certification. As vice president of a student organization, I led over 50 members and achieved profitability within six months. I aspire to contribute to corporate value enhancement through my accounting expertise.',
+      description: 'I started learning bookkeeping before university and obtained the Bookkeeping Level 2 certification in my first year. I co-founded an inter-university circle and served as vice president, overseeing accounting and operations, achieving financial stability and expanding to 60 members. Currently, I am working towards obtaining my USCPA while improving my English skills and knowledge of international accounting standards. With TRABALHO (dedication), LEALDADE (integrity), and RESPEITO (respect) as my core values, I aspire to be a professional who creates value through numbers.',
       values: {
         title: 'Core Values',
         trabalho: {
@@ -73,11 +73,11 @@ export const translations = {
         },
         lealdade: {
           title: 'LEALDADE (Integrity)',
-          description: 'Valuing trust relationships with stakeholders',
+          description: 'Valuing trust relationships with people around me',
         },
         respeito: {
           title: 'RESPEITO (Respect)',
-          description: 'Respecting diverse values and collaborating',
+          description: 'Respecting diversity and collaborating',
         },
       },
     },

@@ -55,12 +55,12 @@ const AboutSection = () => {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6">
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-2">50+</div>
+                <div className="text-3xl font-bold text-primary mb-2">60名</div>
                 <div className="text-gray-400">メンバー</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-2">6ヶ月</div>
-                <div className="text-gray-400">黒字化</div>
+                <div className="text-3xl font-bold text-primary mb-2">初回</div>
+                <div className="text-gray-400">利益創出</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-primary mb-2">2級</div>
