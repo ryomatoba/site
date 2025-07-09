@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
-import { useLanguage } from '../hooks/useLanguage';
 
 const CircleDetail = () => {
   const navigate = useNavigate();
