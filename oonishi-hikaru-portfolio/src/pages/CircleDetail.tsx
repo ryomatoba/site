@@ -7,7 +7,6 @@ import { translations } from '../data/translations';
 const CircleDetail = () => {
   const { language } = useLanguage();
   const navigate = useNavigate();
-  const t = translations[language];
 
   // ページ遷移時にトップにスクロール
   useEffect(() => {
