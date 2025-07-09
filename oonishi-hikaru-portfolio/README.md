@@ -15,6 +15,8 @@
 - **スタイリング**: Tailwind CSS
 - **アニメーション**: Framer Motion
 - **言語対応**: 日本語・英語（i18n）
+- **CI/CD**: GitHub Actions
+- **デプロイ**: GitHub Pages
 
 ## 主な機能
 
@@ -45,7 +47,46 @@ npm run build
 
 # プレビュー
 npm run preview
+
+# リンター実行
+npm run lint
+
+# 型チェック
+npm run type-check
+
+# セキュリティチェック
+npm run audit
 ```
+
+## CI/CD パイプライン
+
+このプロジェクトはGitHub Actionsを使用したCI/CDパイプラインが設定されています。
+
+### 自動化された処理
+
+1. **継続的インテグレーション (CI)**:
+   - TypeScript型チェック
+   - ESLintによるコード品質チェック
+   - npm auditによるセキュリティチェック
+   - ビルドテスト
+   - 複数Node.jsバージョンでのテスト
+
+2. **継続的デプロイメント (CD)**:
+   - main/masterブランチへのpushで自動デプロイ
+   - GitHub Pagesへの自動公開
+   - 品質チェック通過後のみデプロイ実行
+
+### デプロイフロー
+
+```mermaid
+graph LR
+    A[コードプッシュ] --> B[CIチェック]
+    B --> C{チェック通過?}
+    C -->|Yes| D[GitHub Pagesデプロイ]
+    C -->|No| E[エラー通知]
+```
+
+詳細な設定については [`.github/README.md`](.github/README.md) を参照してください。
 
 ## プロジェクト構造
 

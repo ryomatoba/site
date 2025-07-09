@@ -7,7 +7,11 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "lint:fix": "eslint . --fix",
+    "preview": "vite preview",
+    "test": "echo \"No tests specified\" && exit 0",
+    "audit": "npm audit --audit-level moderate",
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "@types/node": "^24.0.4",
