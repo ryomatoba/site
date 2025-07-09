@@ -86,7 +86,7 @@ const HeroSection = () => {
                 <div className="w-full h-full rounded-full bg-white flex items-center justify-center shadow-soft">
                   {/* Profile icon */}
                   <img
-                    src="/assets/images/Icon.png"
+                    src={import.meta.env.BASE_URL + 'assets/images/Icon.png'}
                     alt="Hikaru Onishi"
                     className="object-cover w-60 h-60 sm:w-68 sm:h-68 lg:w-76 lg:h-76 rounded-full"
                   />

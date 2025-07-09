@@ -22,7 +22,7 @@ const ProjectsSection = () => {
         '実践的な財務分析スキルを習得',
       ],
       tools: ['財務分析ツール', 'Excel (財務モデリング)', 'プレゼンテーション'],
-      image: '/assets/images/game.png',
+      image: import.meta.env.BASE_URL + 'assets/images/game.png',
     },
     {
       id: 'circle',
@@ -37,7 +37,7 @@ const ProjectsSection = () => {
         '会計と運営を統括',
       ],
       tools: ['Excel (予算管理)', 'Google Workspace', 'Canva (広報)'],
-      image: '/assets/images/circle.jpg',
+      image: import.meta.env.BASE_URL + 'assets/images/game.png', // 代替画像
     },
   ];
 
