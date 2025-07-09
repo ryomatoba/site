@@ -24,7 +24,7 @@
 ## 設定の詳細
 
 ### GitHub Pages設定
-- **ベースパス**: `/oonishi-hikaru-portfolio/` (本番環境)
+- **ベースパス**: `/hikaru_site/` (本番環境)
 - **デプロイ先**: GitHub Pages
 - **自動化**: main/masterブランチへのpushで自動デプロイ
 
@@ -38,6 +38,7 @@
 
 1. **開発時**:
    ```bash
+   cd oonishi-hikaru-portfolio
    npm run dev          # 開発サーバー起動
    npm run lint         # リンター実行
    npm run type-check   # 型チェック実行
@@ -76,5 +77,7 @@ branches: [ main, master, develop ]
 `ci.yml`に新しいステップを追加:
 ```yaml
 - name: Custom check
-  run: npm run custom-script
+  run: |
+    cd oonishi-hikaru-portfolio
+    npm run custom-script
 ``` 

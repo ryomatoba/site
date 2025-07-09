@@ -6,19 +6,16 @@ on:
   pull_request:
     branches: [ main, master ]
 
-# ジョブの権限を設定
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# 同時実行を制限
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
 jobs:
-  # ビルドジョブ
   build:
     runs-on: ubuntu-latest
     
@@ -31,22 +28,32 @@ jobs:
       with:
         node-version: '18'
         cache: 'npm'
-        cache-dependency-path: package-lock.json
+        cache-dependency-path: oonishi-hikaru-portfolio/package-lock.json
         
     - name: Install dependencies
-      run: npm ci
+      run: |
+        cd oonishi-hikaru-portfolio
+        npm ci
         
     - name: Run type checking
-      run: npm run type-check
+      run: |
+        cd oonishi-hikaru-portfolio
+        npm run type-check
         
     - name: Run linting
-      run: npm run lint
+      run: |
+        cd oonishi-hikaru-portfolio
+        npm run lint
         
     - name: Check for security vulnerabilities
-      run: npm run audit
+      run: |
+        cd oonishi-hikaru-portfolio
+        npm run audit
         
     - name: Build project
-      run: npm run build
+      run: |
+        cd oonishi-hikaru-portfolio
+        npm run build
         
     - name: Setup Pages
       uses: actions/configure-pages@v4
@@ -54,9 +61,8 @@ jobs:
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
-        path: dist
+        path: oonishi-hikaru-portfolio/dist
 
-  # デプロイジョブ
   deploy:
     environment:
       name: github-pages

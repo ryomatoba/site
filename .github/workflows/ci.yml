@@ -23,25 +23,36 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-        cache-dependency-path: package-lock.json
+        cache-dependency-path: oonishi-hikaru-portfolio/package-lock.json
         
     - name: Install dependencies
-      run: npm ci
+      run: |
+        cd oonishi-hikaru-portfolio
+        npm ci
         
     - name: Run type checking
-      run: npm run type-check
+      run: |
+        cd oonishi-hikaru-portfolio
+        npm run type-check
         
     - name: Run linting
-      run: npm run lint
+      run: |
+        cd oonishi-hikaru-portfolio
+        npm run lint
         
     - name: Check for security vulnerabilities
-      run: npm run audit
+      run: |
+        cd oonishi-hikaru-portfolio
+        npm run audit
         
     - name: Build project
-      run: npm run build
+      run: |
+        cd oonishi-hikaru-portfolio
+        npm run build
         
     - name: Test build output
       run: |
+        cd oonishi-hikaru-portfolio
         npm run preview &
         sleep 10
         curl -f http://localhost:4173 || exit 1 
