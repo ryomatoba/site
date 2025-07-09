@@ -39,7 +39,7 @@ function HomePage() {
 function App() {
   return (
     <LanguageProvider>
-      <Router>
+      <Router basename={process.env.NODE_ENV === 'production' ? "/site" : "/"}>
         <ScrollToTop />
         <div className="min-h-screen bg-background">
           <Header />
